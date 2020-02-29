@@ -11,7 +11,7 @@ class App extends Component{
         notification: null,
 
     };
-    apiUrl = 'http://5e57296e4c695f001432f9f6.mockapi.io';
+    apiUrl = 'https://5e57296e4c695f001432f9f6.mockapi.io';
     async componentDidMount() {
         const response = await axios.get(`${this.apiUrl}/todos`);
                 this.setState({todos: response.data})
